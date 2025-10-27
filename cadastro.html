@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Organização Solidária</title>
+</head>
+<body>
+  <header>
+    <h1>Cadastro de Voluntário</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+        <label>Nome Completo: <input type="text" name="nome" required></label><br><br>
+        <label>E-mail: <input type="email" name="email" required></label><br><br>
+        <label>CPF: <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required></label><br><br>
+        <label>Telefone: <input type="tel" name="telefone" pattern="\(\d{2}\)\s\d{5}-\d{4}" placeholder="(00) 00000-0000" required></label><br><br>
+        <label>Data de Nascimento: <input type="date" name="nascimento" required></label><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+        <label>Endereço: <input type="text" name="endereco" required></label><br><br>
+        <label>CEP: <input type="text" name="cep" pattern="\d{5}-\d{3}" placeholder="00000-000" required></label><br><br>
+        <label>Cidade: <input type="text" name="cidade" required></label><br><br>
+        <label>Estado:
+          <select name="estado" required>
+            <option value="">Selecione</option>
+            <option value="SP">SP</option>
+            <option value="RJ">RJ</option>
+            <option value="MG">MG</option>
+            <option value="RS">RS</option>
+            <option value="BA">BA</option>
+          </select>
+        </label><br><br>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Organização Solidária.</p>
+  </footer>
+</body>
+</html>
