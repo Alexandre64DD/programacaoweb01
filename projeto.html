@@ -15,20 +15,45 @@
         <li><a href="cadastro.html">Cadastro</a></li>
       </ul>
     </nav>
+
+    <div class="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+    <link rel="stylesheet" href="css/style.css">
+
   </header>
 
 
-  <main>
-    <section>
-      <h2>Voluntariado</h2>
-      <p>Participe de nossos programas de voluntariado e ajude a transformar vidas!</p>
-      <img src="imagens/Voluntarios1.webp" alt="" width="500px" height="300">
-      <img src="imagens/Voluntarios2.webp" alt=""width="500px" height="300">  
-      <img src="imagens/voluntarios3.webp" alt=""width="500px" height="300">
-    </section>
-    
-    <section>
+    <main>
+  <section class="cards">
+    <article class="card">
+      <img src="imagens/voluntarios3.webp" alt="">
+      <div class="descricao">
+        <p>Iniciativa que promove reforço escolar gratuito para crianças em situação de vulnerabilidade.</p>
+      </div>
+    </article>
 
+    <article class="card">
+      <img src="imagens/Voluntarios2.webp" alt="">
+      <div class="descricao">
+        <p>Distribuição de cestas básicas e refeições a famílias de baixa renda.</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="imagens/Voluntarios1.webp" alt="">
+      <div class="descricao">
+        <p>Projeto que oferece atendimento básico de saúde e orientação preventiva.</p>
+      </div>
+    </article>
+  </section>
+</main>
+
+    <section>
+      <div class="projetos-texto">
       <h2>Projetos Atuais</h2>
       <ul>
         <li>Distribuição de Alimentos</li>
@@ -36,7 +61,7 @@
         <li>Campanhas de Saúde Comunitária</li>
       </ul>
     <section>
-      <h2>Como Doar</h2>
+      <h3>Como Doar</h3>
       <p>Você pode doar roupas, alimentos ou contribuir financeiramente através do nosso site.</p>
           <p>Email: contato@organizacaosolidaria.org</p>
       <p>Pix: 123.456.789-10</p>
@@ -51,5 +76,15 @@
   <footer>
     <p>&copy; 2025 Organização Solidária.</p>
   </footer>
+
+  <script>
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+</script>
+
 </body>
 </html>

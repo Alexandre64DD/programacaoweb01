@@ -15,17 +15,32 @@
         <li><a href="cadastro.html">Cadastro</a></li>
       </ul>
     </nav>
+
+<div class="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+    <link rel="stylesheet" href="css/style.css">
+
   </header>
 
   <main>
     <section>
       <h2>Sobre Nós</h2>
       <p>Somos uma organização sem fins lucrativos que visa apoiar projetos sociais e ajudar comunidades carentes.</p>
-      <img src="imagens/equipe.jpg" alt="Equipe de voluntários da Organização" width="600">
-    </section>
+      <section
+      
+class="sobre-nos">
+  <div class="img-centro">
+    <img src="imagens/imagemdoinicio.jpg" alt="a">
+  </div>
+</section>
+        
 
-    <section>
-      <h2>Entre em Contato</h2>
+    </section>
+      <h3>Entre em Contato</h3>
       <p>Email: contato@organizacaosolidaria.org</p>
       <p>Pix: 123.456.789-10</p>
       <p>Telefone: (11) 12345-6789</p>
@@ -35,5 +50,15 @@
   <footer>
     <p>&copy; 2025 Organização Solidária. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+</script>
+
 </body>
 </html>
