@@ -1,3 +1,5 @@
+console.log("JavaScript carregado com sucesso!");
+
 function sobreTemplate() {
   return `
     <h2>Sobre Nós</h2>
@@ -20,7 +22,6 @@ function contatoTemplate() {
 
 function navigate(page) {
   const app = document.getElementById('app');
-  if (page === 'home') app.innerHTML = homeTemplate();
   if (page === 'sobre') app.innerHTML = sobreTemplate();
   if (page === 'contato') {
     app.innerHTML = contatoTemplate();
@@ -53,3 +54,14 @@ function attachFormEvents() {
 }
 
 navigate('home');
+
+
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+  document.body.classList.remove('high-contrast');
+}
+
+function toggleHighContrast() {
+  document.body.classList.toggle('high-contrast');
+  document.body.classList.remove('dark-mode');
+}

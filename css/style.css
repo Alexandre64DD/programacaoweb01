@@ -218,6 +218,36 @@ h1 {
   text-align: center;
 }
 
+.como_doar {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.doar1 {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.doar2 {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.doar3 {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.doar4 {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
 
 header nav a:hover {
   background-color: var(--cor-terciaria);
@@ -304,8 +334,6 @@ section.projetos-texto {
   margin-bottom: 40px;
 }   
 
-
-
 nav {
   display: flex;
   gap: 20px;
@@ -320,4 +348,57 @@ input, textarea {
   margin: 10px auto;
   padding: 8px;
   width: 250px;
+}
+
+.botao_contraste {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end; 
+  margin-bottom: 10px;
+}
+
+.small-btn {
+  font-size: 14px;
+  padding: 5px 8px;
+  border: 1px solid #ffffff00;
+  border-radius: 4px;
+  background-color: #ffffff00;
+  cursor: pointer;
+}
+
+.small-btn:hover {
+  background-color: #ffffff00;
+}
+
+
+body.dark-mode {
+  background-color: #393535 !important;
+  color: #FFD700  !important;
+}
+
+body.high-contrast {
+  background-color: #ffffff !important;
+  color: #FFD700 !important;
+}
+
+body.dark-mode .sobre-nos {
+  background-color: #393535;
+  color: #FFD700;
+  border-color: #ffffff00;
+}
+
+body.dark-mode .cards { 
+  background-color: #393535;
+  border-color: #ffffff00;
+}
+
+body.dark-mode .card {
+  background-color: #393535;
+  border-color: #393535;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #222121;
+  color: #FFD700;
 }
