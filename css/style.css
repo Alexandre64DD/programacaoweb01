@@ -214,6 +214,11 @@ h1 {
   margin-bottom: 20px;
 }
 
+.cadastro-p {
+  text-align: center;
+}
+
+
 header nav a:hover {
   background-color: var(--cor-terciaria);
   color: var(--cor-primaria);
@@ -298,3 +303,21 @@ section.projetos-texto {
   margin-bottom: 20px;
   margin-bottom: 40px;
 }   
+
+
+
+nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+main {
+  text-align: center;
+}
+input, textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 250px;
+}

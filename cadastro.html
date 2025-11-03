@@ -15,7 +15,8 @@
         <li><a href="cadastro.html">Cadastro</a></li>
       </ul>
     </nav>
-    
+    <p class="cadastro-p">Cadastre-se aqui para ser notificado de outros projetos e também para atualizações futuras!</p>
+
 <div class="hamburger">
   <span></span>
   <span></span>
@@ -71,6 +72,18 @@ hamburger.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
 </script>
+
+<body>
+  <nav>
+    <a href="#sobre" onclick="navigate('sobre')">Sobre</a>
+    <a href="#contato" onclick="navigate('contato')">Contato</a>
+  </nav>
+
+  <main id="app"></main>
+
+  <script src="js/app.js"></script>
+</body>
+
 
 </body>
 </html>
